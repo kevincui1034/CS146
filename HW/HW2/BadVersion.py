@@ -10,3 +10,5 @@ def BadVersionCheck(n):
 
 n=3
 print("Version '", BadVersionCheck(n), "' is the first bad version")
+
+## Iterates through the array until it finds the bad version

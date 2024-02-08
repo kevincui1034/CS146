@@ -23,3 +23,6 @@ public class Anagram {
         }
     }
 }
+
+// f length of string is not equal it cannot be an anagram
+// Returns anagram if the sorted string s and t are the same, other it returns false
