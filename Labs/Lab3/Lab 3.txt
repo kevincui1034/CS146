@@ -1,0 +1,28 @@
+Lab 3
+
+Question 1
+
+1. n^3 if larger because it has a larger power
+
+2.
+
+3. n^logn				2^sqr(n)
+	logn(logn)			sqr(n)log2
+	log((logn)^2)		log(sqr(n)log2)
+	2log(logn)			log(sqr(n)) + loglog2
+	2loglogn			log(sqr(n))
+
+4. 2^2n is larger because it's 2 times n.
+
+
+Question 2
+
+1. Best case: Multiple of 2 at constant time O(1)
+
+2. Worst Case: i*i = n
+				 i^2 = n
+				 i = sqr(n)
+
+Time complexity: O(sqr(n))
+
+3. Time complexity: O(n)
