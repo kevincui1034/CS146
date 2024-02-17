@@ -1,0 +1,51 @@
+##Question 1
+
+def insertion_sort(A, n):
+    for i in range(1, n):       ## This is (n -1)
+        key = A[i]
+        j = i - 1
+        while j >= 0 and key < A[j]:  ## this is (n-1)(n-1+1)
+            A[j + 1] = A[j]
+            j -= 1
+        A[j + 1] = key
+    return A
+
+## So on average, the array would be reandomly ordered
+## On average, it would be O(n^2)
+
+## The best case scenario would be when the array is already sorted
+## So, the sorting algorithm would not need to be sorted multiple times
+## The time complexity would be O(n)
+
+## The worst case scenario would be when the array is in reverse order
+## Each element would be needed to be compared and change position with another element
+## The time complexity would be O(n^2)
+
+##Question 2
+
+MATRIX_MULTIPLY(A, B): 
+  if columns(A) ≠ rows(B): 
+    raise ValueError("Matrix multiplication is not defined.") 
+
+  rows_A ← number of rows in A 
+  cols_A ← number of columns in A 
+  cols_B ← number of columns in B 
+  result ← matrix of size rows_A x cols_B filled with zeros 
+
+  for i from 1 to rows_A do:    ## this is (n)
+    for j from 1 to cols_B do:  ## this is (n)(n)
+    sum ← 0 
+      for k from 1 to cols_A do:    ## this is (n)(n)(n)
+        sum ← sum + A[i][k] * B[k][j] 
+      result[i][j] ← sum return result
+
+## The average time complexity is when the matrices are randomly generated
+## On average, it would be O(n^3)
+
+## The best case scenario would be when the dimensions of the matrix is small
+## But, the best case would be the same as the average because the algorithm would still
+## be required to run based on the dimensions of the matrix
+
+## The worst case would be when the matrices are large in dimensions
+## But, the worst case would be the same as the other cases if the dimensions are the same
+## because the time complexity of this algorithm is based upon the size of the matrix
