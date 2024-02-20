@@ -4,7 +4,7 @@ Question 1
 
 1. n^3 if larger because it has a larger power
 
-2.
+2. n^2logn is asymptotically greater than nlogn
 
 3. n^logn				2^sqr(n)
 	logn(logn)			sqr(n)log2
@@ -12,7 +12,7 @@ Question 1
 	2log(logn)			log(sqr(n)) + loglog2
 	2loglogn			log(sqr(n))
 
-4. 2^2n is larger because it's 2 times n.
+4. 2^2n is asymptotically larger because it's 2 times n vs n.
 
 
 Question 2
@@ -25,4 +25,4 @@ Question 2
 
 Time complexity: O(sqr(n))
 
-3. Time complexity: O(n)
+3. Average case: Time complexity: O(n)
