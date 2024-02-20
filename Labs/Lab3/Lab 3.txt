@@ -11,6 +11,7 @@ Question 1
 	log((logn)^2)		log(sqr(n)log2)
 	2log(logn)			log(sqr(n)) + loglog2
 	2loglogn			log(sqr(n))
+	2loglogn	  <		1/2 logn
 
 4. 2^2n is asymptotically larger because it's 2 times n vs n.
 
