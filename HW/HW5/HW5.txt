@@ -1,13 +1,33 @@
 # Question 1
 1. T(N) = 2T(N-1) + 1
     T(N-1) = 2T(n-2) + 1
-    T(N-2) = 2T(n-3) + 1
+    T(N-2) = 2(2T(N−2)+1)+1 = 2^2T(N−2)+2+1
+    T(n) = (2^k)T(n-k) + 2^0 + 2^1 + ... + 2^(k-1)
+    
+    Assume n-k = 0
+    n = k
+    2^nT(n-n) + 1 + 2 + ... 2^(k-1)
+    2^n + 2^k - 1
+    2^n + 2^n - 1
+    T(n) = 2^(n+1) - 1
+
+    Time complexity: O(2^n)
 
 2. T(N) = 3T(N-1) + n
+    T(N-1) = 3T(N-2) + n
+
 3. T(N) = 9T(N/2) + n2
+    T(N-1) = 9T(N-1/2) + n2
+
+
 4. T(N) = 100T(N/2) + nlog2cn + 1  (c is a constant)
+    T(N-1) = 100T(N-1/2) + nlog2cn + 1
+
 5. T(N) = 4T(N/2) + n2logn
+    T(N-1) = 4T(N-1/2) + n2logn
+
 6. T(N) = 5T(N/2) + n2/logn
+    T(N-1) = 5T(N-1/2) + n2/logn
 
 
 # Question 2
