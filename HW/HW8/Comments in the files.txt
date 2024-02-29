@@ -1,0 +1,5 @@
+We use a hashmap to count the characters in the string and we want to get even characters
+so we check for odd characters. We iterate through the hashmap and if there is an odd
+character then we -1 from the hashmap because it cannot form a palindrome. At the end
+if there is an odd character then we +1 to the length because the odd character can be placed
+in the middle of the palindrome.
