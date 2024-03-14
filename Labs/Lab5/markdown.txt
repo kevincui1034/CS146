@@ -1,0 +1,6 @@
+Initiate an empty stack and prev_node.
+While root is not empty or nodes left in the stack, then
+traverse to the leftmost node. Appends to stack. Pop the stack and check if value
+is greater than the prev_node. Return false if not. Traverse to
+the right child of the popped node until tree is traversed.
+If any node visited is less than or equal to the previous node, then False.

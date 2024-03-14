@@ -32,8 +32,6 @@ if __name__ == "__main__":
     root.left.right = TreeNode(4)
     root.right.left = TreeNode(5)
     root.right.right = TreeNode(6)
-    
-tree_node = TreeNode()
 print("Tree Inversed: ")
-result = tree_node.invertTree(root)
+result = root.invertTree(root)
 print("Root: " , result.val)

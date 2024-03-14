@@ -1,0 +1,2 @@
+If root is empty, return the root. 
+Traverse down the tree and swaps the left and right children.
