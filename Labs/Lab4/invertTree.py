@@ -6,6 +6,34 @@ class TreeNode(object):
         self.left = left
 
         self.right = right
+        
+        ## Print to check
+        print(val)
     
     def invertTree(self, root):
-        left, right = root.left, root.right
+        if not root:
+            return root
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+
+        root.left, root.right = root.right, root.left
+        
+        ## Print to check
+        print(root.val)
+        return root
+
+if __name__ == "__main__":
+    
+    print("Tree: ")
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(8)
+    root.left.left = TreeNode(3)
+    root.left.right = TreeNode(4)
+    root.right.left = TreeNode(5)
+    root.right.right = TreeNode(6)
+    
+tree_node = TreeNode()
+print("Tree Inversed: ")
+result = tree_node.invertTree(root)
+print("Root: " , result.val)
