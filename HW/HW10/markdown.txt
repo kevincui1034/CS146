@@ -1,0 +1,4 @@
+We use an empty list result to store the traversal. We then create a count
+to keep track of the level. We create a helped method called level, and we take two arguments: count and root.
+We return if root is empty. The method appends the current node to result then we call for the
+left and right children of the node and increment the count each time.
