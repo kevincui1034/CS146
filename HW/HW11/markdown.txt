@@ -1,0 +1,3 @@
+First check if image already has new color, and if so, returns the image.
+Flood function takes row, sr, and column, sc, and checks if old pixel is the same as oldColor,
+otherwise it changes the color of the pixel to color.

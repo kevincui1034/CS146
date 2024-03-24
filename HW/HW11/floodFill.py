@@ -1,15 +1,15 @@
 def floodFill(image, sr, sc, color):
-    def flood(image, sr, sc, oldColor, color):
+    def fill(image, sr, sc, oldColor, color):
         if (sr < 0 or sr >= len(image) or sc < 0 or sc >= len(image[0]) or
                 image[sr][sc] != oldColor or image[sr][sc] == color):
             return
         image[sr][sc] = color
-        flood(image, sr + 1, sc, oldColor, color)
-        flood(image, sr - 1, sc, oldColor, color)
-        flood(image, sr, sc + 1, oldColor, color)
-        flood(image, sr, sc - 1, oldColor, color)
+        fill(image, sr + 1, sc, oldColor, color)
+        fill(image, sr - 1, sc, oldColor, color)
+        fill(image, sr, sc + 1, oldColor, color)
+        fill(image, sr, sc - 1, oldColor, color)
 
-    flood(image, sr, sc, image[sr][sc], color)
+    fill(image, sr, sc, image[sr][sc], color)
     return image
 
 image = [
