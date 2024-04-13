@@ -1,0 +1,5 @@
+Using indegree list to track prerequisites, and adj as adjacency list where each course is a node, and
+a prerequisite pair is a directed edge from one course to another. We iterate through prerequisites list
+and update adj list and incremenet the indegree count. We use a queue and all courses with indegree 0 to it.
+We use a while loop to iterate until the queue is empty to check if all courses have been visited,
+and returns True if so, otherwise, False

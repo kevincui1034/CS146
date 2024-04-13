@@ -23,16 +23,10 @@ def canFinish(numCourses, prerequisites):
     return numCourses == visited
 
 def testCase():
-    result_1 = canFinish(2, [[1, 0]])
-    if result_1 == True:
-        print("Test case 1 passed")
-    else:
-        print("Test case 1 failed")
+    result1 = canFinish(2, [[1, 0]])
+    print("Test case 1: ",result1)
 
-    result_2 = canFinish(2, [[1, 0], [0, 1]])
-    if result_2 == True:
-        print("Test case 2 passed")
-    else:
-        print("Test case 2 failed")
+    result2 = canFinish(2, [[1, 0], [0, 1]])
+    print("Test case 2: ",result2)
 
 testCase()
