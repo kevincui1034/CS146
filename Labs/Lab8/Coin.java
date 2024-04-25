@@ -13,9 +13,14 @@ public class Coin {
                 }
             }
         }
-        return amountCoins[amount] <= amount ? amountCoins[amount] : -1;
+        if (amountCoins[amount] <= amount) {
+            return amountCoins[amount];
+        }
+        else {
+            return amountCoins[amount] = -1;
+        }
     }
-    
+
     public static void main(String[] args) {
         Coin coin = new Coin();
         int[] coins = {1, 2, 5};

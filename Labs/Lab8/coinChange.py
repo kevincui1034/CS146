@@ -13,7 +13,7 @@ class Coin:
         
         if amountCoins[amount] <= amount:
             return amountCoins[amount]
-        else: 
+        else:
             return -1
     
 coin = Coin()
